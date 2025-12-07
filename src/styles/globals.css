@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.page2{
+    border: 3px blue solid;
+}
