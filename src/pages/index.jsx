@@ -1,22 +1,19 @@
-import Head from 'next/head';
-import {
-    VolumeNotice as IconVolumeNotice,
-} from '@icon-park/react';
+import SectionFaq from '@/components/sections/SectionFaq';
+import SectionCityList from '@/components/sections/SectionCityList';
+import SectionAdvantage from '@/components/sections/SectionAdvantage';
 
-import { Icon } from '@/components';
+
+export default function Home() {
+    return (
+        <>
+            <SectionAdvantage />
+            <SectionCityList />
+            {/* 
+            <SectionFaq /> */}
+        </>
+    )
+}
 export const config = {
     amp: true,
     unstable_runtimeJS: false
 };
-export default function Home() {
-    return (
-        <div className='test'>
-            <IconVolumeNotice/>
-            {/* <Icon type="Program1" /> */}
-            <div>pageHome</div>
-            <h1>Learn Chinese
-                and Experience China in
-                30+ Cities in China</h1>
-        </div>
-    )
-}

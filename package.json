@@ -6,11 +6,10 @@
     "dev": "next dev -p 4006",
     "start": "next start",
     "build": "next build",
-    "export": "next build && next export && npm run remove",
-    "copy": "copyfiles -f ./out/_next/static/css/pages/* ./out/css",
-    "copy2": "copyfiles -f ./out/css ./public/css",
+    "export": "next build && next export && npm run remove && npm run remove2 && npm run remove3",
     "remove": "rm -rf ./out/_next",
-    "remove2": "rm -rf ./out/css "
+    "remove2": "rm -rf ./out/css",
+    "remove3": "rm -rf ./out/404.html"
   },
   "dependencies": {
     "@icon-park/react": "^1.4.2",
@@ -20,8 +19,6 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@svgr/webpack": "5.5",
-    "copyfiles": "^2.4.1",
-    "sass": "^1.95.0"
+    "@svgr/webpack": "5.5"
   }
 }

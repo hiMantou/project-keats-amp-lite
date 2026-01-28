@@ -1,23 +1,19 @@
-// import ButtonPlay from './buttonPlay';
 import Icon from './icon';
-// import Button from './button';
-// import ButtonGroup from './button/buttonGroup';
-// import ImgCover from './Icon/imgCover';
-// import VideoCover from './videoCover';
-// import Carousel from '../pages/home/carouselEvent';
-// import VideoLightbox from './videoLightbox';
-// import VideoYoutube from './videoYoutube';
-// import Audio from './audio';
+import Button from './button';
+import CityBox from './CityBox';
+import Circle from './Circle';
+import SectionFaq from './sections/SectionFaq';
+import FormFee from './sections/FormFee';
+import FormContact from './sections/FormContact';
+import SectionAdvantage from './sections/SectionAdvantage';
+import SectionCityList from './sections/SectionCityList';
 
 export {
-	// ButtonPlay,
-	Icon,
-	// Button, 
-	// ImgCover,
-	// VideoCover,
-	// Carousel,
-	// VideoLightbox,
-	// ButtonGroup,
-	// VideoYoutube,
-	// Audio,
+    Icon,
+    Button,
+    CityBox,
+    Circle,
+    SectionFaq,
+    FormFee,
+    FormContact,
 }

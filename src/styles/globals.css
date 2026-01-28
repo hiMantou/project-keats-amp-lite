@@ -1,4 +1,17 @@
+:root {
+    --primary-color: #32A3A8;
+    --primary-color-l: #CDF0E1;
+    --primary-color-d: #075756;
+    --second-color: #FDE52F;
 
+    --head-color: #3c3c3c;
+    --text-color: #464646;
+    --text-color-l: #969696;
+
+
+    --border-color: #e6e6e6;
+    --panel-bg: #F5F5F5;
+}
 
 html,
 body {
@@ -9,19 +22,17 @@ body {
 }
 
 body {
-    position: relative;
-    background: #fff;
-
-    font-size: 18px;
-    font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", "Lato",
-        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
         Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol";
     color: var(--text-color);
+    font-size: 16px;
     line-height: 1.4;
-
+    position: relative;
+    background: #fff;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    /* background: linear-gradient(0deg, rgba(191, 236, 216, 0), rgba(191, 236, 216, 0.15)); */
 }
 
 img {
@@ -63,10 +74,10 @@ textarea {
     height: 120px;
 }
 
+select,
 input,
 textarea {
     box-sizing: border-box;
-    margin: 0 0 10px 0;
     font-variant: tabular-nums;
     list-style: none;
     font-feature-settings: "tnum";
@@ -74,35 +85,74 @@ textarea {
     display: inline-block;
     width: 100%;
     min-width: 0;
-    padding: 8px 10px;
+    padding: 10px;
+    line-height: 28px;
     background-color: #fff;
     background-image: none;
+    border: 1px transparent solid;
 
-    border: 1px solid #d9d9d9;
     transition: all 0.3s;
-    font-size: 16px;
+    font-size: inherit;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.08);
 }
 
 textarea:focus,
 input:focus {
-    border-color: #0d8589;
-    box-shadow: 0 0 0 2px #dff7f4;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color-l);
 }
 
-textarea.user-invalid,
-input.user-invalid {
+textarea.error,
+input.error {
     border-color: #ff7875;
     box-shadow: 0 0 0 2px #fff1f0;
 }
 
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    opacity: 0.6;
+}
+
+input::-moz-placeholder,
+textarea:-ms-input-placeholder {
+    opacity: 0.6;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    opacity: 0.6;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+/* select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="rgb(7, 87, 86)" d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+} */
+
 a {
     text-decoration: none;
     color: inherit;
-
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    transition: background-color 0.3s, opacity 0.3s, color 0.3s;
 }
 
 a:focus {
@@ -122,11 +172,11 @@ p {
 }
 
 p a {
-    color: #0d8589;
+    color: var(--primary-color);
 }
 
 p a:hover {
-    color: #47979c;
+    color: var(--primary-color-d);
 }
 
 ul {}
@@ -161,24 +211,40 @@ p ul li {
     clear: both;
 }
 
+.containerM {
+    max-width: 980px;
+}
+
 .container {
     max-width: 1200px;
+
+}
+
+.containerM,
+.container {
     margin: auto;
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: 2;
+    padding-left: 15px;
+    padding-right: 15px;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+.containerM .row,
 .container .row {
-    margin-right: -20px;
-    margin-left: -20px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
+.wideContainer {
+    margin: 0 15px;
+    position: relative;
+}
+
+.clear:before,
+.clear:after,
 .row:before,
 .row:after {
     content: " ";
@@ -186,32 +252,81 @@ p ul li {
     clear: both;
 }
 
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-lg-12 {
+    width: 100%;
+}
+
+.col-lg-6 {
+    width: 50%;
+}
+
+.col-lg-4 {
+    width: 33%;
+}
+
+.col-lg-3 {
+    width: 25%;
+}
+
+.col-lg-2 {
+    width: 16.666666666666664%;
+}
+
+
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+    font-family: "Lora", Georgia, "Times New Roman", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+
     padding: 0;
-    line-height: 1.1em;
+    line-height: 1.2em;
+    color: var(--head-color);
+    margin: 0 0 0.6em 0;
 }
 
-h1 span,
-h2 span,
-h3 span {
-    color: #0d8589;
-    display: inline-block;
+h1 span {
+    color: var(--second-color);
 }
+
+h2 span,
+h3 span,
+h4 span {
+    color: var(--primary-color-d);
+}
+
+
 h1 {
-    font-size: 50px;
-    letter-spacing: 0.02em;
-    text-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+    font-size: 42px;
 }
 
 h2 {
     font-size: 36px;
-    letter-spacing: 0.02em;
 }
 
 h3 {
@@ -223,15 +338,173 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h6 {
-    font-size: 12px;
-    letter-spacing: 0.2em;
-    font-weight: normal;
-    margin-bottom: 6px;
+    font-size: 16px;
 }
-.test{
-    color: blue;
+
+.bgFull {
+    background-color: var(--primary-color-l);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pageContainer {
+    min-height: 420px;
+}
+
+.section {
+    padding: 30px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(0deg, rgba(191, 236, 216, 0), rgba(191, 236, 216, 0.15));
+}
+
+.sectionHeader {
+    text-align: center;
+    margin: 0 auto 24px auto;
+}
+
+.sectionSubHeader {
+    text-align: center;
+    margin: 0 auto 16px auto;
+}
+
+.sectionHeader br,
+.sectionSubHeader br {
+    display: none;
+}
+
+.sectionHeader h2,
+.sectionSubHeader h3 {
+    margin-bottom: 0.1em;
+}
+
+#footer {
+    background-color: #232323;
+    color: #fff;
+}
+
+#footer .main {
+    padding: 40px 0;
+}
+
+#footer .followLeft {
+
+}
+
+#footer .linkRight {
+    line-height: 64px;
+    text-align: center;
+}
+
+#footer .iconList .icon {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 64px;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+#footer .iconList .icon img {
+    width: 42px;
+    height: auto;
+}
+
+#footer .iconList .icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#backToTop {
+    position: fixed;
+    z-index: 99;
+    display: none;
+    bottom: 20px;
+    right: 20px;
+}
+
+.copyright {
+    padding: 20px 0;
+    border-top: 1px rgba(255, 255, 255, 0.2) solid;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.faqList .item {
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.05);
+}
+
+.faqList .title {
+    padding: 20px 60px 20px 20px;
+    position: relative;
+}
+
+.faqList .title h4 {
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.faqList .title .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 36px;
+    line-height: 64px;
+    width: 64px;
+    text-align: center;
+    color: var(--primary-color);
+    transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+}
+
+.faqList .title:hover h4 {
+    color: var(--primary-color);
+}
+
+.faqList .title:hover .icon {
+    color: var(--primary-color-d);
+}
+
+.faqList .item .plus {
+    display: inline-block;
+}
+
+.faqList .item .minus {
+    display: none;
+}
+
+.faqList .item.expand .plus {
+    display: none;
+}
+
+.faqList .item.expand .minus {
+    display: inline-block;
+}
+
+.faqList .text {
+    padding: 0 30px 20px 30px;
+}
+
+.jsCollapse .jsTrigger {
+    cursor: pointer;
+}
+
+.jsCollapse .text {
+    display: none;
 }

@@ -1,0 +1,94 @@
+.sectionCityList .cityBox {
+    display: block;
+    margin: 10px 0;
+}
+
+.sectionCityList .cityBox .cover {
+    padding-top: 140%;
+    border-radius: 160px;
+}
+
+.cityMeta {
+    text-align: center;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cityMeta .txt {
+    font-size: 80%;
+    font-weight: normal;
+    color: var(--text-color-l);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cityList .col-lg-4 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.sectionAdvantage {}
+
+.circleList {
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.circleList br {
+    display: none;
+}
+
+.circleList .item {
+    text-align: center;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+.circleList .item.expand {
+    width: 100%;
+}
+
+.circleList .item .inner {
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.08);
+}
+
+.circleList .item .cont {
+    padding: 12px 0;
+}
+
+.circleList .item h4 {
+    margin-bottom: 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.circleList .item.yellow .inner {
+    background: var(--second-color);
+}
+
+.circleList .item.green .inner {
+    background-color: var(--primary-color);
+}
+
+.circleList .item.greenLight .inner {
+    background-color: var(--primary-color-l);
+}
+
+.circleList .item.greenDark .inner {
+    color: #fff;
+    background-color: var(--primary-color-d);
+}
+
+.circleList .item.green h4,
+.circleList .item.greenDark h4 {
+    color: inherit;
+}

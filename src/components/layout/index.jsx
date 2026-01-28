@@ -1,12 +1,7 @@
-import Nav from './Nav';
+import NavBar from './NavBar';
 import Footer from './Footer';
-import Section from './Section';
-import Header from './Header';
-
 
 export {
-    Nav,
-    Footer,
-    Section,
-    Header,
+    NavBar,
+    Footer
 }
