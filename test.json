@@ -1,0 +1,314 @@
+{
+  "externals": [null],
+  "optimization": {
+    "noEmitOnErrors": false,
+    "checkWasmTypes": false,
+    "nodeEnv": false,
+    "splitChunks": false,
+    "minimize": false,
+    "minimizer": [null, null]
+  },
+  "context": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite",
+  "node": {
+    "setImmediate": false
+  },
+  "watchOptions": {
+    "aggregateTimeout": 5,
+    "ignored": ["**/.git/**", "**/node_modules/**", "**/.next/**", "**/.#*"]
+  },
+  "output": {
+    "path": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/.next/server",
+    "filename": "[name].js",
+    "libraryTarget": "commonjs2",
+    "hotUpdateChunkFilename": "static/webpack/[id].[hash].hot-update.js",
+    "hotUpdateMainFilename": "static/webpack/[hash].hot-update.json",
+    "chunkFilename": "[name].js",
+    "strictModuleExceptionHandling": true,
+    "futureEmitAssets": true,
+    "webassemblyModuleFilename": "static/wasm/[modulehash].wasm"
+  },
+  "performance": false,
+  "resolve": {
+    "extensions": [".js", ".mjs", ".jsx", ".json", ".wasm"],
+    "modules": [
+      "node_modules",
+      "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite"
+    ],
+    "alias": {
+      "next": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next",
+      "private-next-pages": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/src/pages",
+      "private-dot-next": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/.next",
+      "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/next-server/lib/router/utils/resolve-rewrites.js": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/next-server/lib/router/utils/resolve-rewrites-noop.js"
+    },
+    "mainFields": ["main", "module"],
+    "plugins": [
+      {
+        "paths": {
+          "@/assets": ["src/assets"],
+          "@/assets/*": ["src/assets/*"],
+          "@/components": ["src/components"],
+          "@/components/*": ["src/components/*"]
+        },
+        "resolvedBaseUrl": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite"
+      },
+      {
+        "topLevelLoader": {}
+      }
+    ]
+  },
+  "resolveLoader": {
+    "alias": {
+      "emit-file-loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/build/webpack/loaders/emit-file-loader",
+      "error-loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/build/webpack/loaders/error-loader",
+      "next-babel-loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/build/webpack/loaders/next-babel-loader",
+      "next-client-pages-loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/build/webpack/loaders/next-client-pages-loader",
+      "next-serverless-loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/build/webpack/loaders/next-serverless-loader",
+      "noop-loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/build/webpack/loaders/noop-loader",
+      "next-style-loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/build/webpack/loaders/next-style-loader"
+    },
+    "modules": ["node_modules"],
+    "plugins": [
+      {
+        "topLevelLoader": {}
+      }
+    ]
+  },
+  "module": {
+    "rules": [
+      {
+        "test": {},
+        "include": [
+          "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite",
+          {},
+          {},
+          {},
+          {}
+        ],
+        "use": {
+          "loader": "next-babel-loader",
+          "options": {
+            "isServer": true,
+            "distDir": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/.next",
+            "pagesDir": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/src/pages",
+            "cwd": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite",
+            "cache": true,
+            "development": false,
+            "hasReactRefresh": false,
+            "hasJsxRuntime": true
+          }
+        }
+      },
+      {
+        "oneOf": [
+          {
+            "test": {},
+            "loader": "noop-loader",
+            "options": {
+              "__next_css_remove": true
+            }
+          },
+          {
+            "test": {},
+            "issuer": {},
+            "use": {
+              "loader": "error-loader",
+              "options": {
+                "reason": "CSS \u001b[1mcannot\u001b[22m be imported within \u001b[36mpages/_document.js\u001b[39m. Please move global styles to \u001b[36mpages/_app.js\u001b[39m."
+              }
+            }
+          },
+          {
+            "sideEffects": false,
+            "test": {},
+            "issuer": {
+              "and": [
+                "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite"
+              ],
+              "not": [{}]
+            },
+            "use": [
+              {
+                "loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/compiled/css-loader/cjs.js",
+                "options": {
+                  "importLoaders": 1,
+                  "sourceMap": true,
+                  "esModule": false,
+                  "modules": {
+                    "exportLocalsConvention": "asIs",
+                    "exportOnlyLocals": true,
+                    "mode": "pure"
+                  }
+                }
+              },
+              {
+                "loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/compiled/postcss-loader/cjs.js",
+                "options": {
+                  "postcssOptions": {
+                    "plugins": [null, null],
+                    "config": false
+                  },
+                  "sourceMap": true
+                }
+              }
+            ]
+          },
+          {
+            "sideEffects": false,
+            "test": {},
+            "issuer": {
+              "and": [
+                "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite"
+              ],
+              "not": [{}]
+            },
+            "use": [
+              {
+                "loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/compiled/css-loader/cjs.js",
+                "options": {
+                  "importLoaders": 3,
+                  "sourceMap": true,
+                  "esModule": false,
+                  "modules": {
+                    "exportLocalsConvention": "asIs",
+                    "exportOnlyLocals": true,
+                    "mode": "pure"
+                  }
+                }
+              },
+              {
+                "loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/compiled/postcss-loader/cjs.js",
+                "options": {
+                  "postcssOptions": {
+                    "plugins": [null, null],
+                    "config": false
+                  },
+                  "sourceMap": true
+                }
+              },
+              {
+                "loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/compiled/resolve-url-loader/index.js",
+                "options": {
+                  "sourceMap": true
+                }
+              },
+              {
+                "loader": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/compiled/sass-loader/cjs.js",
+                "options": {
+                  "sourceMap": true,
+                  "sassOptions": {}
+                }
+              }
+            ]
+          },
+          {
+            "test": [{}, {}],
+            "use": {
+              "loader": "error-loader",
+              "options": {
+                "reason": "CSS Modules \u001b[1mcannot\u001b[22m be imported from within \u001b[1mnode_modules\u001b[22m.\nRead more: https://nextjs.org/docs/messages/css-modules-npm"
+              }
+            }
+          },
+          {
+            "test": [{}, {}],
+            "use": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/node_modules/next/dist/compiled/ignore-loader/index.js"
+          },
+          {
+            "test": [{}, {}],
+            "issuer": {
+              "and": [{}]
+            },
+            "use": {
+              "loader": "error-loader",
+              "options": {
+                "reason": "Global CSS \u001b[1mcannot\u001b[22m be imported from within \u001b[1mnode_modules\u001b[22m.\nRead more: https://nextjs.org/docs/messages/css-npm"
+              }
+            }
+          },
+          {
+            "test": [{}, {}],
+            "use": {
+              "loader": "error-loader",
+              "options": {
+                "reason": "Global CSS \u001b[1mcannot\u001b[22m be imported from files other than your \u001b[1mCustom <App>\u001b[22m. Please move all global CSS imports to \u001b[36msrc/pages/_app.jsx\u001b[39m. Or convert the import to Component-Level CSS (CSS Modules).\nRead more: https://nextjs.org/docs/messages/css-global"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "@svgr/webpack",
+            "options": {
+              "icon": true
+            }
+          }
+        ]
+      }
+    ],
+    "strictExportPresence": true
+  },
+  "plugins": [
+    {},
+    {
+      "definitions": {
+        "process.env.NODE_ENV": "\"production\"",
+        "process.browser": "false",
+        "process.env.__NEXT_TRAILING_SLASH": "false",
+        "process.env.__NEXT_BUILD_INDICATOR": "true",
+        "process.env.__NEXT_PLUGINS": "false",
+        "process.env.__NEXT_STRICT_MODE": "false",
+        "process.env.__NEXT_REACT_ROOT": "false",
+        "process.env.__NEXT_OPTIMIZE_FONTS": "true",
+        "process.env.__NEXT_OPTIMIZE_IMAGES": "false",
+        "process.env.__NEXT_OPTIMIZE_CSS": "false",
+        "process.env.__NEXT_SCRIPT_LOADER": "false",
+        "process.env.__NEXT_SCROLL_RESTORATION": "false",
+        "process.env.__NEXT_IMAGE_OPTS": "{\"deviceSizes\":[640,750,828,1080,1200,1920,2048,3840],\"imageSizes\":[16,32,48,64,96,128,256,384],\"path\":\"/_next/image\",\"loader\":\"default\",\"enableBlurryPlaceholder\":false}",
+        "process.env.__NEXT_ROUTER_BASEPATH": "\"\"",
+        "process.env.__NEXT_HAS_REWRITES": "false",
+        "process.env.__NEXT_I18N_SUPPORT": "false",
+        "process.env.__NEXT_ANALYTICS_ID": "\"\"",
+        "global.GENTLY": "false"
+      }
+    },
+    {
+      "options": {
+        "context": null,
+        "hashFunction": "md4",
+        "hashDigest": "base64",
+        "hashDigestLength": 4
+      }
+    },
+    {
+      "options": {
+        "resourceRegExp": {},
+        "contextRegExp": {}
+      }
+    },
+    {
+      "serverless": false,
+      "dev": false
+    },
+    {
+      "options": {
+        "outputPath": "/Volumes/safari/flow/keats/keatsAmpLite/project-keats-amp-lite/.next/server"
+      }
+    },
+    {},
+    {},
+    {
+      "gatheredStylesheets": [],
+      "manifestContent": [],
+      "isLikeServerless": false
+    },
+    {}
+  ],
+  "mode": "production",
+  "name": "server",
+  "target": "node",
+  "bail": true,
+  "devtool": false
+}

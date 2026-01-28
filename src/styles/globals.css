@@ -1,24 +1,237 @@
+
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    background: #fff;
+
+    font-size: 18px;
+    font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", "Lato",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    color: var(--text-color);
+    line-height: 1.4;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+textarea:active,
+textarea:focus,
+select:active,
+select:focus,
+button:active,
+button:focus,
+input:active,
+input:focus {
+    outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+    height: 120px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    padding: 8px 10px;
+    background-color: #fff;
+    background-image: none;
+
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #0d8589;
+    box-shadow: 0 0 0 2px #dff7f4;
+}
+
+textarea.user-invalid,
+input.user-invalid {
+    border-color: #ff7875;
+    box-shadow: 0 0 0 2px #fff1f0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-* {
-  box-sizing: border-box;
+a:focus {
+    outline: 0;
 }
 
-.globalpage2{
-    border: 3px blue solid;
+a:hover {
+    text-decoration: none;
 }
 
- .pageContainer{
-    background-color: pink;
- }
+a[href^="tel"] {
+    display: inline-block;
+}
+
+p {
+    margin-top: 0;
+}
+
+p a {
+    color: #0d8589;
+}
+
+p a:hover {
+    color: #47979c;
+}
+
+ul {}
+
+p ul li {
+    padding-bottom: 1em;
+}
+
+.keats-icon {
+    display: inline-block;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clear {
+    clear: both;
+}
+
+.container:before,
+.container:after,
+.clear:before,
+.clear:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container .row {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1em;
+}
+
+h1 span,
+h2 span,
+h3 span {
+    color: #0d8589;
+    display: inline-block;
+}
+h1 {
+    font-size: 50px;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+.test{
+    color: blue;
+}

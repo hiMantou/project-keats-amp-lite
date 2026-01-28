@@ -1,17 +1,22 @@
-import styles from '../styles/Home.module.css'
-// import { useEffect, useState } from 'react';
+import Head from 'next/head';
+import {
+    VolumeNotice as IconVolumeNotice,
+} from '@icon-park/react';
 
+import { Icon } from '@/components';
+export const config = {
+    amp: true,
+    unstable_runtimeJS: false
+};
 export default function Home() {
-    // const [state, setState] = useState(false)
-    // useEffect(() => {
-    //     setState('hello')
-    // }, [])
     return (
-        <div className={styles.container}>
-            ssss{state}
+        <div className='test'>
+            <IconVolumeNotice/>
+            {/* <Icon type="Program1" /> */}
+            <div>pageHome</div>
+            <h1>Learn Chinese
+                and Experience China in
+                30+ Cities in China</h1>
         </div>
     )
 }
-export const config = {
-    unstable_runtimeJS: false
-};
