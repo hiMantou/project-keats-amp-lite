@@ -150,11 +150,12 @@
 }
 
 
-
 .logo {
     position: relative;
     color: #fff;
     display: block;
+    height: 40px;
+    margin: 0;
 }
 
 .logo .up,

@@ -1,19 +1,21 @@
 import SectionFaq from '@/components/sections/SectionFaq';
 import SectionCityList from '@/components/sections/SectionCityList';
 import SectionAdvantage from '@/components/sections/SectionAdvantage';
+import SectionAccommodation from '@/components/sections/SectionAccommodation';
+import SectionAssistant from '@/components/sections/SectionAssistant';
 
 
 export default function Home() {
     return (
         <>
-            <SectionFaq />
+            {/* <SectionFaq />
             <SectionAdvantage />
             <SectionCityList />
-            
-
-            {/* <SectionAccommodation header={<div className="sectionHeader"><h2>Accommodation <span>Options</span></h2></div>} />
+             */}
+            <SectionAssistant />
+            <SectionAccommodation header={<div className="sectionHeader"><h2>Accommodation <span>Options</span></h2></div>} />
             <SectionAccommodation len={2} />
-            <SectionAccommodation len={2} /> */}
+            <SectionAccommodation len={2} />
         </>
     )
 }

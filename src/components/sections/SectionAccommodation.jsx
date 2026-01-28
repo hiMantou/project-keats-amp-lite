@@ -1,9 +1,14 @@
-
-
-import SlickMin from './SlickMin';
-import Box from './Box';
-
-
+import classNames from "classnames";
+const Box = ({ title, className, children }) => {
+    return (
+        <div className="col-lg-6">
+            <div className={classNames("infoBox", className)}>
+                <h4>{title}</h4>
+                <div className="cont">{children}</div>
+            </div>
+        </div>
+    );
+};
 
 const Section = ({ header, len }) => {
     return (
@@ -14,9 +19,8 @@ const Section = ({ header, len }) => {
                     <h3>Homestay</h3>
                     Suitable for students aged 1-52 weeks.
                 </div>
-                <div className="row">
-                    <SlickMin len={len} />
-                </div>
+                <div className="cover"><img src="./images/citygallery/small.jpg" /></div>
+                    {/* <amp-img src={`https://source.unsplash.com/random/600x300?sign=` + Math.random()} width="600" height="300" layout="responsive" /> */}
                 <div className="row">
                     <div className="accServiceList infoBoxList">
                         <Box className="dark" title="Location">
@@ -36,19 +40,6 @@ const Section = ({ header, len }) => {
                         </Box>
                         <Box className="yellow" title="SA Service">
                             One-time housing search fee: $500
-                            <div className="jsToolTip toolTip">
-                                <div className="jsContent toolTipCont">
-                                    <h6>Includes</h6>
-                                    <ul>
-                                        <li> Property viewing</li>
-                                        <li>Signing the contract</li>
-                                        <li>Repair of property defects during the contract period</li>
-                                        <li>Repair of property defects during the contract period</li>
-                                        <li>Repair of property defects during the contract period</li>
-                                        <li>Repair of property defects during the contract period</li>
-                                    </ul>
-                                </div>
-                            </div>
                         </Box>
                     </div>
                 </div>

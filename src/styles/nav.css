@@ -6,12 +6,9 @@
 
 .topBar .logo {
     float: left;
-    height: 40px;
-    margin: 0;
-}
-.topBar .logo{
     color: var(--head-color)
 }
+
 
 .topBar .logo .down {
     color: var(--primary-color)
