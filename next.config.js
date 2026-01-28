@@ -8,48 +8,16 @@ module.exports = {
     },
 
     webpack: (config, options) => {
-
         eidtSvgIcon(config);
-        if (process.env.NODE_ENV === "production") {
-            eidtCssFileName(config);
-            eidtCssModuleName(config);
-        }
+        eidtStyledJsx(config, options);
         return config;
     },
-}
-
-function eidtCssModuleName(config) {
-    config.module.rules.forEach((rule) => {
-        if (rule.oneOf) {
-            rule.oneOf.forEach(({ use }) => {
-                if (use && Array.isArray(use)) {
-                    use.forEach(({ options }) => {
-                        if (options.modules) {
-                            delete options.modules.getLocalIdent
-                            options.modules.localIdentName = '[local]'
-                        }
-                    })
-                }
-            })
-        }
-    })
-}
-
-function eidtCssFileName(config) {
-    const miniCssExtractPluginInstance = config.plugins.find(
-        plugin => plugin.__next_css_remove
-    );
-    if (miniCssExtractPluginInstance) {
-        miniCssExtractPluginInstance.options.filename = 'static/css/[name].css';
-        miniCssExtractPluginInstance.options.chunkFilename = 'static/css/[name].css';
-    }
 }
 
 function eidtSvgIcon(config) {
     config.module.rules.push({
         test: /\.svg$/,
         use: [
-            // options.defaultLoaders.babel,
             {
                 loader: '@svgr/webpack',
                 options: {
@@ -58,4 +26,18 @@ function eidtSvgIcon(config) {
             }
         ]
     });
+}
+function eidtStyledJsx(config, options) {
+    config.module.rules.push({
+        test: /\.css$/,
+        use: [
+            options.defaultLoaders.babel,
+            {
+                loader: require('styled-jsx/webpack').loader,
+                options: {
+                    type: 'global',
+                },
+            }
+        ],
+    })
 }

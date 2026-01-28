@@ -19,10 +19,8 @@ function MyApp({ Component, pageProps }) {
                 <link rel="preload" href="images/theme.png" as="image" />
                 <title>Learn Chinese in China | Keats School</title>
                 <meta name="description" content="Learn Chinese in China in a fun and effective way. Discover Mandarin Chinese and the exciting Chinese culture with Keats School in Kunming, Yunnan, China." />
-                <link rel="stylesheet" href="./css/_app.css" />
                 <link rel="icon" href="favicon.ico" />
             </Head>
-            {/* <Nav /> */}
             <div className="pageContainer">
                 <Component {...pageProps} />
             </div>
