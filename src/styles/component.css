@@ -50,7 +50,10 @@
     font-size: 24px;
     border-radius: 50%;
 }
-
+.btn-block {
+    width: 100%;
+    max-width: 360px;
+}
 .btn-link {
     height: auto;
     line-height: normal;
@@ -178,14 +181,13 @@
 }
 
 .formItem {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .formItem label {
-    font-size: 20px;
     padding: 8px 0;
     display: block;
-
+    font-size: 16px;
 }
 
 .formItem .extra {
@@ -208,24 +210,26 @@
 
 .priceRow {
     text-align: center;
-    margin-top: 24px;
-    padding: 36px 0 12px 120px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     border-top: 1px var(--border-color) solid;
+
+    margin-top: 24px;
+    padding: 24px 0 0px 0px;
 }
 
 .priceRow .price {
-    font-size: 36px;
     color: var(--primary-color-d);
     display: inline-block;
     vertical-align: -0.1em;
     min-width: 240px;
     padding: 0 12px;
-    text-align: left;
-}
 
+    font-size: 28px;
+    text-align: center;
+}
+/* 
 .formSlider.ui-slider {
     margin-top: 28px;
     height: 8px;
@@ -270,123 +274,16 @@
     border: 0;
     background-position: 0 0;
     background-color: var(--primary-color-d);
-}
-
-.infoPop {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-
-.infoPop .bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-}
+} */
 
 .infoPop .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 60px;
     text-align: center;
-
+    padding: 32px 20px;
     width: 90%;
     max-width: 960px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.05);
-
-    box-sizing: border-box;
-
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
-
-.infoPop .btnClose {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 32px;
-    box-shadow: none;
-}
-
-.infoPop .keats-icon {
-    color: var(--primary-color);
-}
-
 .infoPop .iconCheck {
-    font-size: 64px;
+    color: var(--primary-color);
+    font-size: 56px;
     margin-bottom: 12px;
 } 
-
-/* -------------------------------- */
-/* 
-.btn-block {
-    width: 100%;
-    max-width: 360px;
-}
-
-.formItem {
-    margin-bottom: 12px;
-}
-
-.formItem label {
-    font-size: 16px;
-}
-
-.priceRow {
-    margin-top: 24px;
-    padding: 24px 0 0px 0px;
-}
-
-.priceRow .price {
-    font-size: 28px;
-    text-align: center;
-}
-
-
-.promotionList .promotionBox {
-    padding: 200px 15px 15px 15px;
-}
-
-.promotionList .promotionBox .bg {
-    width: 100%;
-    height: 200px;
-}
-
-.promotionList .promotionBox .bg:before {
-    width: 100%;
-    height: 30%;
-    top: auto;
-    bottom: 0;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
-}
-
-.promotionList .promotionBox.dark .bg:before {
-    background: linear-gradient(0deg, rgba(7, 87, 86, 1) 0%, rgba(7, 87, 86, 0.7) 50%, rgba(7, 87, 86, 0) 100%);
-}
-
-.promotionList .promotionBox.yellow .bg:before {
-    background: linear-gradient(0deg, rgba(253, 229, 47, 1) 0%, rgba(253, 229, 47, 0.7) 50%, rgba(253, 229, 47, 0) 100%);
-}
-
-.promotionList .promotionBox .btnGroup {
-    text-align: center;
-}
-
-.infoPop .content {
-    padding: 32px 20px;
-}
-
-.infoPop .iconCheck {
-    font-size: 56px;
-}  */
