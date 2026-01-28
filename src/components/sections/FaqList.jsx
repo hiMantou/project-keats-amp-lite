@@ -3,26 +3,26 @@ import {
     Minus as IconMinus,
 } from '@icon-park/react';
 
-const Box = ({ className, children }) => {
+const Box = () => {
     return (
-        <div className="jsItem item">
-            <div className="jsTrigger title">
+        <section className="item">
+            <div className="title">
                 <div className="icon"><IconPlus className="plus" /><IconMinus className="minus" /></div>
                 <h4>Lorem Ipsum is simply dummy text of the printin？</h4>
             </div>
-            <div className="jsText text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</div>
-        </div>
+            <div className="text">Lorem Ipsum is simply dummy text of the  standard dummy text ever since the 1500s</div>
+        </section>
     );
 };
 
 const Section = () => {
     return (
-        <div className="jsCollapse faqList">
-            <Box />
-            <Box />
-            <Box />
-            <Box />
-        </div>
+        <amp-accordion className="faqList" disable-session-states expand-single-section >
+            <Box/>
+            <Box/>
+            <Box/>
+            <Box/>
+        </amp-accordion>
     );
 };
 

@@ -6,10 +6,14 @@ import SectionAdvantage from '@/components/sections/SectionAdvantage';
 export default function Home() {
     return (
         <>
+            <SectionFaq />
             <SectionAdvantage />
             <SectionCityList />
-            {/* 
-            <SectionFaq /> */}
+            
+
+            {/* <SectionAccommodation header={<div className="sectionHeader"><h2>Accommodation <span>Options</span></h2></div>} />
+            <SectionAccommodation len={2} />
+            <SectionAccommodation len={2} /> */}
         </>
     )
 }

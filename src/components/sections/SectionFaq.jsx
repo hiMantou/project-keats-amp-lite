@@ -2,7 +2,7 @@ import { Plus as IconPlus } from '@icon-park/react';
 import { Button } from '@/components';
 import FaqList from './FaqList';
 
-const Section = ({ }) => {
+const Section = () => {
     return (
         <div className="section sectionFaq">
             <div className="containerM">
