@@ -9,7 +9,7 @@ const Section = () => {
                     <h2>Contact</h2>
                     Lorem Ipsum is simply dummy text of the printing
                 </div>
-                <form className="form" method="post" action-xhr="https://localhost:4006/api/contact" target="_top" custom-validation-reporting="show-all-on-submit">
+                <form className="form" method="post" action-xhr="http://localhost:4006/api/contact" target="_top" custom-validation-reporting="show-all-on-submit">
                     <div className="form-content">
                         <div className="row">
                             <div className="col-lg-6">

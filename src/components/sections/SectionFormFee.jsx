@@ -10,7 +10,7 @@ const Section = () => {
                     <h3><span>Small Group Chinese Class</span></h3>
                 </div>
 
-                <form className="form" method="post" action-xhr="https://localhost:4006/api/price" target="_top" custom-validation-reporting="show-all-on-submit">
+                <form className="form" method="post" action-xhr="http://localhost:4006/api/price" target="_top" custom-validation-reporting="show-all-on-submit">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="formItem">
