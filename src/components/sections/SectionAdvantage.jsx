@@ -1,8 +1,19 @@
-import { Circle } from '@/components';
-
-const Section = ({ index }) => {
+import classNames from "classnames";
+const Circle = ({ className, children, type }) => {
     return (
-        <div className="section sectionAdvantage">
+        <div className={classNames("item", className, type)}>
+            <div className="inner">
+                <div className="cont">
+                    {children}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const Section = () => {
+    return (
+        <div className="section topSection sectionAdvantage">
             <div className="container">
                 <div className="sectionHeader"><h2>Take a Chinese language Course <span>with Sojourn Abroad</span></h2></div>
                 <div className="circleList clear">

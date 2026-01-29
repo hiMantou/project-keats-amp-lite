@@ -1,9 +1,4 @@
-import {
-    ToTop as IconToTop,
-} from '@icon-park/react';
-
 import Logo from '@/components/icon/logo';
-import { Button } from '@/components';
 
 const Footer = () => {
     return (
@@ -37,9 +32,6 @@ const Footer = () => {
                     Copyright © 2025 Sojourn Abroad All Rights Reserved
                 </div>
             </div>
-            <Button id="backToTop" type="icon">
-                <IconToTop />
-            </Button>
         </div>
     )
 }

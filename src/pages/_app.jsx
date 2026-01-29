@@ -27,7 +27,9 @@ function MyApp({ Component, pageProps }) {
                 <title>Learn Chinese in China | Keats School</title>
                 <meta name="description" content="Learn Chinese in China in a fun and effective way. Discover Mandarin Chinese and the exciting Chinese culture with Keats School in Kunming, Yunnan, China." />
                 <link rel="icon" href="favicon.ico" />
-                <link href="https://fonts.font.im/css?family=Lora:700|Roboto:400,700" rel="stylesheet"></link>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@500..700&display=swap" rel="stylesheet"/>
             </Head>
             <NavBar/>
             <div className="pageContainer">

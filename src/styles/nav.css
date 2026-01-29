@@ -1,7 +1,12 @@
 .topBar {
-    padding: 15px 0 10px 0;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 10px 0;
     box-sizing: border-box;
     overflow: hidden;
+    background-color: rgba(248, 252, 250, 0.96);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .04);
 }
 
 .topBar .logo {
@@ -12,4 +17,11 @@
 
 .topBar .logo .down {
     color: var(--primary-color)
+}
+
+.btnTop{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px 20px;
 }

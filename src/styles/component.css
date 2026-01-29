@@ -1,277 +1,306 @@
  .btn,
-.btn:active,
-.btn:focus {
-    outline: 0;
-}
+ .btn:active,
+ .btn:focus {
+     outline: 0;
+ }
 
-.btnGroup {
-    text-align: center;
-    padding-top: 24px;
-}
+ .btnGroup {
+     text-align: center;
+     padding-top: 24px;
+ }
 
-.btn {
-    height: 52px;
-    min-width: 52px;
-    font-size: 16px;
-    line-height: 52px;
+ .btn {
+     height: 52px;
+     min-width: 52px;
+     font-size: 16px;
+     line-height: 52px;
 
-    padding: 0;
-    border-radius: 52px;
-    box-sizing: border-box;
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    white-space: nowrap;
-    text-align: center;
-    cursor: pointer;
+     padding: 0;
+     border-radius: 52px;
+     box-sizing: border-box;
+     position: relative;
+     display: inline-block;
+     font-weight: bold;
+     white-space: nowrap;
+     text-align: center;
+     cursor: pointer;
 
-    transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+     transition: background-color 0.3s, opacity 0.3s, color 0.3s;
 
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    touch-action: manipulation;
-    border: none;
-    background: none;
-}
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     touch-action: manipulation;
+     border: none;
+     background: none;
+ }
 
-.btn.loading {
-    cursor: default;
-    opacity: 0.8;
-}
+ .btn.loading {
+     cursor: default;
+     opacity: 0.8;
+ }
 
-.btn-default {
-    padding: 0 40px;
-    min-width: 220px;
-}
+ .btn-default {
+     padding: 0 40px;
+     min-width: 220px;
+ }
 
-.btn-icon {
-    font-size: 24px;
-    border-radius: 50%;
-}
-.btn-block {
-    width: 100%;
-    max-width: 360px;
-}
-.btn-link {
-    height: auto;
-    line-height: normal;
-    min-width: auto;
-    padding: 12px 12px;
-    color: var(--primary-color);
-}
+ .btn-icon {
+     font-size: 24px;
+     border-radius: 50%;
+ }
 
-.btn-link:hover {
-    color: var(--primary-color-d);
-}
+ .btn-block {
+     width: 100%;
+     max-width: 360px;
+ }
 
-.btn-white {
-    color: var(--primary-color-d);
-    background-color: #fff;
-}
+ .btn-link {
+     height: auto;
+     line-height: normal;
+     min-width: auto;
+     padding: 12px 12px;
+     color: var(--primary-color);
+ }
 
-.btn-transparent {
-    background-color: transparent;
-}
+ .btn-link:hover {
+     color: var(--primary-color-d);
+ }
 
-.btn-white:not(.loading):hover {
-    color: var(--primary-color-d);
-    background-color: var(--primary-color-l);
-}
+ .btn-white {
+     color: var(--primary-color-d);
+     background-color: #fff;
+ }
 
-.btn-green {
-    color: var(--primary-color-d);
-    background-color: var(--primary-color-l);
-}
+ .btn-transparent {
+     background-color: transparent;
+ }
 
-.btn-green:not(.loading):hover {
-    color: #fff;
-    background-color: var(--primary-color);
-}
+ .btn-white:not(.loading):hover {
+     color: var(--primary-color-d);
+     background-color: var(--primary-color-l);
+ }
 
-.btn-white.btn-border {
-    color: #fff;
-    background-color: transparent;
-    border: 1px #fff solid;
-}
+ .btn-green {
+     color: var(--primary-color-d);
+     background-color: var(--primary-color-l);
+ }
 
-.btn-white.btn-border:not(.loading):hover {
-    color: var(--primary-color-d);
-    background-color: var(--primary-color-l);
-    border-color: transparent;
-}
+ .btn-green:not(.loading):hover {
+     color: #fff;
+     background-color: var(--primary-color);
+ }
 
+ .btn-white.btn-border {
+     color: #fff;
+     background-color: transparent;
+     border: 1px #fff solid;
+ }
 
-.btn-icon.btn-white {
-    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
-}
-
-.btn-md {
-    height: 40px;
-    border-radius: 40px;
-    line-height: 40px;
-    min-width: 40px;
-    font-size: 24px;
-}
-
-.btn-lg {
-    height: 64px;
-    border-radius: 64px;
-    line-height: 64px;
-    min-width: 64px;
-    font-size: 24px;
-}
-
-.spin {
-    -webkit-animation: spin 1s infinite linear;
-    animation: spin 1s infinite linear;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
+ .btn-white.btn-border:not(.loading):hover {
+     color: var(--primary-color-d);
+     background-color: var(--primary-color-l);
+     border-color: transparent;
+ }
 
 
-.logo {
-    position: relative;
-    color: #fff;
-    display: block;
-    height: 40px;
-    margin: 0;
-}
+ .btn-icon.btn-white {
+     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
+ }
 
-.logo .up,
-.logo .down,
-.logo svg {
-    height: 100%;
-    width: auto;
-}
+ .btn-md {
+     height: 40px;
+     border-radius: 40px;
+     line-height: 40px;
+     min-width: 40px;
+     font-size: 24px;
+ }
 
-.logo .down {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+ .btn-lg {
+     height: 64px;
+     border-radius: 64px;
+     line-height: 64px;
+     min-width: 64px;
+     font-size: 24px;
+ }
 
-.label,
-.formItem label {
-    font-family: "Lora", Georgia, "Times New Roman", Helvetica, Arial, sans-serif;
-    color: var(--head-color);
-}
+ .spin {
+     -webkit-animation: spin 1s infinite linear;
+     animation: spin 1s infinite linear;
+ }
 
-.formItem {
-    margin-bottom: 12px;
-}
+ @-webkit-keyframes spin {
+     0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+     }
 
-.formItem label {
-    padding: 8px 0;
-    display: block;
-    font-size: 16px;
-}
+     100% {
+         -webkit-transform: rotate(359deg);
+         transform: rotate(359deg);
+     }
+ }
 
-.formItem .extra {
-    font-size: 80%;
-    padding: 0 4px;
-    display: inline-block;
-    color: var(--text-color-l);
+ @keyframes spin {
+     0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+     }
 
-    font-family: -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        "Roboto",
-        Helvetica,
-        Arial,
-        sans-serif,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol";
-}
+     100% {
+         -webkit-transform: rotate(359deg);
+         transform: rotate(359deg);
+     }
+ }
 
-.priceRow {
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-top: 1px var(--border-color) solid;
 
-    margin-top: 24px;
-    padding: 24px 0 0px 0px;
-}
+ .logo {
+     position: relative;
+     color: #fff;
+     display: block;
+     height: 40px;
+     margin: 0;
+ }
 
-.priceRow .price {
-    color: var(--primary-color-d);
-    display: inline-block;
-    vertical-align: -0.1em;
-    min-width: 240px;
-    padding: 0 12px;
+ .logo .up,
+ .logo .down,
+ .logo svg {
+     height: 100%;
+     width: auto;
+ }
 
-    font-size: 28px;
-    text-align: center;
-}
- 
-.infoPop .content {
-    text-align: center;
-    padding: 32px 20px;
-    width: 90%;
-    max-width: 960px;
-}
-.infoPop .iconCheck {
-    color: var(--primary-color);
-    font-size: 56px;
-    margin-bottom: 12px;
-}
+ .logo .down {
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
 
-.CalendarMonth_caption {
-    background-color: var(--primary-color-l);
-    color: var(--primary-color-d);
-}
-.CalendarMonth_caption>*{
-    font-weight: normal;
-}
-.CalendarDay__default,
-.CalendarDay_container {
-    background-color: var(--primary-color-l);
-    border: 1px solid transparent;
-    color: var(--text-color);
-}
-.CalendarDay__blocked_out_of_range,
-.CalendarDay__blocked_out_of_range:active,
-.CalendarDay__blocked_out_of_range:hover,
-.CalendarDay__blocked_calendar,
-.CalendarDay__blocked_calendar:active,
-.CalendarDay__blocked_calendar:hover {
-    background-color: var(--primary-color-l);
-    opacity: 0.35;
-    border: 1px solid transparent;
-    color: var(--text-color);
-}
+ .label,
+ .formItem label {
+     font-family: "Lora", Georgia, "Times New Roman", Helvetica, Arial, sans-serif;
+     color: var(--head-color);
+ }
 
-.CalendarDay__selected,
-.CalendarDay__selected:active,
-.CalendarDay__selected:hover,
-.CalendarDay__selected_start {
-    background: var(--primary-color-d);
-    color: #fff;
-}
+ .formItem {
+     margin-bottom: 12px;
+ }
 
+ .formItem label {
+     padding: 8px 0;
+     display: block;
+     font-size: 16px;
+ }
+
+ .formItem .extra {
+     font-size: 80%;
+     padding: 0 4px;
+     display: inline-block;
+     color: var(--text-color-l);
+
+     font-family: -apple-system,
+         BlinkMacSystemFont,
+         "Segoe UI",
+         "Roboto",
+         Helvetica,
+         Arial,
+         sans-serif,
+         "Apple Color Emoji",
+         "Segoe UI Emoji",
+         "Segoe UI Symbol";
+ }
+
+ .priceRow {
+     text-align: center;
+     font-size: 16px;
+     text-transform: uppercase;
+     font-weight: bold;
+     border-top: 1px var(--border-color) solid;
+
+     margin-top: 24px;
+     padding: 24px 0 0px 0px;
+ }
+
+ .priceRow .price {
+     color: var(--primary-color-d);
+     display: inline-block;
+     vertical-align: -0.1em;
+     padding: 0 12px;
+
+     font-size: 28px;
+     text-align: center;
+ }
+
+
+ form .form-submitting {
+     display: none;
+ }
+
+ form.amp-form-submitting .form-init {
+     display: none;
+ }
+
+ form.amp-form-submitting .form-submitting {
+     display: block;
+ }
+
+ form.amp-form-submit-success .form-content {
+     display: none;
+ }
+
+ .form-success {
+     display: none;
+ }
+
+ form.amp-form-submit-success .form-success {
+     display: block;
+ }
+
+ .infoPop {
+     text-align: center;
+     padding: 32px 20px;
+     width: 90%;
+     max-width: 960px;
+ }
+
+ .infoPop .iconCheck {
+     color: var(--primary-color);
+     font-size: 56px;
+     margin-bottom: 12px;
+ }
+
+ .CalendarMonth_caption {
+     background-color: var(--primary-color-l);
+     color: var(--primary-color-d);
+ }
+
+ .CalendarMonth_caption>* {
+     font-weight: normal;
+ }
+
+ .CalendarDay__default,
+ .CalendarDay_container {
+     background-color: var(--primary-color-l);
+     border: 1px solid transparent;
+     color: var(--text-color);
+ }
+
+ .CalendarDay__blocked_out_of_range,
+ .CalendarDay__blocked_out_of_range:active,
+ .CalendarDay__blocked_out_of_range:hover,
+ .CalendarDay__blocked_calendar,
+ .CalendarDay__blocked_calendar:active,
+ .CalendarDay__blocked_calendar:hover {
+     background-color: var(--primary-color-l);
+     opacity: 0.35;
+     border: 1px solid transparent;
+     color: var(--text-color);
+ }
+
+ .CalendarDay__selected,
+ .CalendarDay__selected:active,
+ .CalendarDay__selected:hover,
+ .CalendarDay__selected_start {
+     background: var(--primary-color-d);
+     color: #fff;
+ }

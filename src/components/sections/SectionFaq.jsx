@@ -4,13 +4,13 @@ import {
     Minus as IconMinus,
 } from '@icon-park/react';
 
-const Box = () => {
+const Box = (props) => {
     return (
-        <section className="item">
-            <div className="title">
+        <section className="item" {...props}>
+            <header className="title">
                 <div className="icon"><IconPlus className="plus" /><IconMinus className="minus" /></div>
                 <h4>Lorem Ipsum is simply dummy text of the printin？</h4>
-            </div>
+            </header>
             <div className="text">Lorem Ipsum is simply dummy text of the  standard dummy text ever since the 1500s</div>
         </section>
     );
@@ -20,8 +20,8 @@ const Section = () => {
         <div className="section sectionFaq">
             <div className="containerM">
                 <div className="sectionHeader"> <h2>FAQ</h2></div>
-                <amp-accordion className="faqList" disable-session-states expand-single-section >
-                    <Box />
+                <amp-accordion className="faqList" disable-session-states="" expand-single-section="">
+                    <Box expanded=""/>
                     <Box />
                     <Box />
                     <Box />

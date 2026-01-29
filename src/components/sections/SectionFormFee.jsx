@@ -1,19 +1,16 @@
 import { Loading as IconLoading } from '@icon-park/react';
-import { Icon, Circle, Button } from '@/components';
+import { Button } from '@/components';
 
 const Section = () => {
     return (
         <div className="section sectionFee">
             <div className="containerM">
-
                 <div className="sectionHeader">
                     <h2>Program Fee</h2>
                     <h3><span>Small Group Chinese Class</span></h3>
                 </div>
 
-
-
-                <form className="form" method="post" action-xhr="/documentation/examples/api/submit-form-input-text-xhr" target="_top">
+                <form className="form" method="post" action-xhr="https://localhost:4006/api/price" target="_top" custom-validation-reporting="show-all-on-submit">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="formItem">
@@ -36,7 +33,7 @@ const Section = () => {
                                     locale="en"
                                     blocked="FREQ=WEEKLY;WKST=SU;BYDAY=TU,WE,TH,FR,SA,SU" 
                                     format="DD/MM/YYYY">
-                                    <input name="start_date" value="02/02/2026" placeholder="Pick a date"/>
+                                    <input name="start_date" defaultValue="02/02/2026" placeholder="Pick a date"/>
                                 </amp-date-picker>
                             </div>
                         </div>
@@ -46,7 +43,7 @@ const Section = () => {
                         <div className="col-lg-12">
                             <div className="formItem">
                                 <label>Number of Weeks</label>
-                                <input type="number" name="weeks" value="2" min="2" max="24" />
+                                <input type="number" name="weeks" defaultValue="2" min="2" max="24" />
                                 <span className="extra">2-24</span>
                             </div>
                         </div>
@@ -62,26 +59,20 @@ const Section = () => {
                             </div>
                         </div>
                     </div>
-                    <div submitting>
-                        <div className="priceRow">
+                    <div className="priceRow">
+                        <div className="form-submitting">
                             Estimated Total <span className="label price"><IconLoading className="spin" /></span>
                         </div>
+                        <div submit-success="">
+                            <template type="amp-mustache">
+                                Estimated Total <span className="label price">$ {`{{price}}`}</span>
+                            </template>
+                        </div>
                     </div>
-                    <div submit-success>
-                        <template type="amp-mustache">
-                            <div className="priceRow">
-                                Estimated Total <span className="label price">$ 18,643</span>
-                            </div>
-                            {/* Success! Thanks {{ name }} for trying the <code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how <code>amp-form</code> handles errors. */}
-                        </template>
-                    </div>
-                    
-                    <div className="btnGroup">
+                    <div className="btnGroup form-init">
                         <Button className="btn-block">APPLY</Button>
                     </div>
-                    
                 </form>
-
             </div>
         </div>
     );

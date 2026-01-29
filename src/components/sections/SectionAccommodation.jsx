@@ -20,7 +20,6 @@ const Section = ({ header, len }) => {
                     Suitable for students aged 1-52 weeks.
                 </div>
                 <div className="cover"><img src="./images/citygallery/small.jpg" /></div>
-                    {/* <amp-img src={`https://source.unsplash.com/random/600x300?sign=` + Math.random()} width="600" height="300" layout="responsive" /> */}
                 <div className="row">
                     <div className="accServiceList infoBoxList">
                         <Box className="dark" title="Location">
