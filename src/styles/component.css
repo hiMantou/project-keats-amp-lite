@@ -229,53 +229,7 @@
     font-size: 28px;
     text-align: center;
 }
-/* 
-.formSlider.ui-slider {
-    margin-top: 28px;
-    height: 8px;
-    border-radius: 8px;
-    border: none !important;
-    background-color: var(--primary-color-l);
-}
-
-.formSlider.ui-slider .ui-slider-handle .core {
-    transform: translate(-50%) translateY(-36px);
-    font-size: 16px;
-    white-space: nowrap;
-    margin-left: -8px;
-}
-
-.formSlider.ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-
-    cursor: pointer;
-    touch-action: none;
-
-    font-weight: normal;
-    color: var(--text-color);
-    width: 20px;
-    height: 20px;
-    background-color: var(--primary-color-d);
-    border: 8px #fff solid;
-    border-radius: 50%;
-    outline: 0 !important;
-    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.08);
-
-    top: -14px;
-    margin-left: -.6em;
-}
-
-.formSlider.ui-slider .ui-slider-range {
-    position: absolute;
-    z-index: 1;
-    font-size: .7em;
-    display: block;
-    border: 0;
-    background-position: 0 0;
-    background-color: var(--primary-color-d);
-} */
-
+ 
 .infoPop .content {
     text-align: center;
     padding: 32px 20px;
@@ -286,4 +240,38 @@
     color: var(--primary-color);
     font-size: 56px;
     margin-bottom: 12px;
-} 
+}
+
+.CalendarMonth_caption {
+    background-color: var(--primary-color-l);
+    color: var(--primary-color-d);
+}
+.CalendarMonth_caption>*{
+    font-weight: normal;
+}
+.CalendarDay__default,
+.CalendarDay_container {
+    background-color: var(--primary-color-l);
+    border: 1px solid transparent;
+    color: var(--text-color);
+}
+.CalendarDay__blocked_out_of_range,
+.CalendarDay__blocked_out_of_range:active,
+.CalendarDay__blocked_out_of_range:hover,
+.CalendarDay__blocked_calendar,
+.CalendarDay__blocked_calendar:active,
+.CalendarDay__blocked_calendar:hover {
+    background-color: var(--primary-color-l);
+    opacity: 0.35;
+    border: 1px solid transparent;
+    color: var(--text-color);
+}
+
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover,
+.CalendarDay__selected_start {
+    background: var(--primary-color-d);
+    color: #fff;
+}
+
