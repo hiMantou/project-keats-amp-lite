@@ -12,7 +12,7 @@ const Section = () => {
 
                 <form className="form" method="post" action-xhr="http://localhost:4006/api/price" target="_top" custom-validation-reporting="show-all-on-submit">
                     <div className="row">
-                        <div className="col-lg-12">
+                        <div className="col-lg-6 col-md-12">
                             <div className="formItem">
                                 <label>City</label>
                                 <select>
@@ -24,7 +24,7 @@ const Section = () => {
                                 </select>
                             </div>
                         </div>
-                        <div className="col-lg-12">
+                        <div className="col-lg-6 col-md-12">
                             <div className="formItem">
                                 <label>Start Date <span className="extra">Classes start every Monday</span></label>
                                 <amp-date-picker
@@ -40,14 +40,14 @@ const Section = () => {
                     </div>
 
                     <div className="row">
-                        <div className="col-lg-12">
+                        <div className="col-lg-6 col-md-12">
                             <div className="formItem">
                                 <label>Number of Weeks</label>
                                 <input type="number" name="weeks" defaultValue="2" min="2" max="24" />
                                 <span className="extra">2-24</span>
                             </div>
                         </div>
-                        <div className="col-lg-12">
+                        <div className="col-lg-6 col-md-12">
                             <div className="formItem">
                                 <label>Accommodation Options</label>
                                 <select>

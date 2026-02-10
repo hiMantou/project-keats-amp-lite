@@ -1,11 +1,9 @@
 import classNames from "classnames";
 const Circle = ({ className, children, type }) => {
     return (
-        <div className={classNames("item", className, type)}>
-            <div className="inner">
-                <div className="cont">
-                    {children}
-                </div>
+        <div className={classNames("col-lg-4", type == "yellow" ? "col-md-12" :"col-md-6")}>
+            <div className={classNames("item", className, type)}>
+                {children}
             </div>
         </div>
     );
@@ -16,8 +14,7 @@ const Section = () => {
         <div className="section topSection sectionAdvantage">
             <div className="container">
                 <div className="sectionHeader"><h2>Take a Chinese language Course <span>with Sojourn Abroad</span></h2></div>
-                <div className="circleList clear">
-                    
+                <div className="row circleList">
                     <Circle type="greenDark">
                         <h4>30+ Cities</h4>
                         1 In China
@@ -26,7 +23,7 @@ const Section = () => {
                         <h4>Tons of</h4>
                         2 Activities
                     </Circle>
-                    <Circle className="expand" type="yellow">
+                    <Circle type="yellow">
                         <h4>Small Group <br/>Class</h4>
                         3 1-52 weeks
                     </Circle>
@@ -38,7 +35,7 @@ const Section = () => {
                         <h4>15 Classes</h4>
                         5 Per week
                     </Circle>
-                    <Circle className="expand" type="yellow">
+                    <Circle type="yellow">
                         <h4>Homestay</h4>
                         6 Add-on
                     </Circle>

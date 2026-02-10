@@ -1,7 +1,7 @@
 import classNames from "classnames";
 const Box = ({ title, className, children }) => {
     return (
-        <div className="col-lg-6">
+        <div className="col-lg-3 col-md-6">
             <div className={classNames("infoBox", className)}>
                 <h4>{title}</h4>
                 <div className="cont">{children}</div>
@@ -19,8 +19,19 @@ const Section = ({ header, len }) => {
                     <h3>Homestay</h3>
                     Suitable for students aged 1-52 weeks.
                 </div>
-                <div className="cover"><img src="./images/citygallery/small.jpg" /></div>
+                
                 <div className="row">
+                    <div className="cover">
+                        <div className="col-lg-4 col-md-12">
+                            <img src="./images/citygallery/small.jpg" />
+                        </div>
+                        <div className="col-lg-4 col-md-12">
+                            <img src="./images/citygallery/small.jpg" />
+                        </div>
+                        <div className="col-lg-4 col-md-12">
+                            <img src="./images/citygallery/small.jpg" />
+                        </div>
+                    </div>
                     <div className="accServiceList infoBoxList">
                         <Box className="dark" title="Location">
                             It's quite close to the school.

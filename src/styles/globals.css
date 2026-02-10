@@ -31,7 +31,7 @@ body {
     position: relative;
     background: #fff;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased; 
+    -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -64,7 +64,6 @@ textarea {
     color: inherit;
     font-size: inherit;
     font-family: inherit;
-    line-height: inherit;
 }
 
 textarea {
@@ -212,14 +211,6 @@ p ul li {
     clear: both;
 }
 
-.containerM {
-    max-width: 980px;
-}
-
-.container {
-    max-width: 1200px;
-
-}
 
 .containerM,
 .container {
@@ -227,7 +218,7 @@ p ul li {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-
+    max-width: 920px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -235,8 +226,8 @@ p ul li {
 
 .containerM .row,
 .container .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -6px;
+    margin-left: -6px;
 }
 
 .wideContainer {
@@ -265,8 +256,8 @@ p ul li {
 .col-lg-10,
 .col-lg-11,
 .col-lg-12 {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 6px;
+    padding-left: 6px;
 
     float: left;
     -webkit-box-sizing: border-box;
@@ -283,7 +274,7 @@ p ul li {
 }
 
 .col-lg-4 {
-    width: 33%;
+    width: 33.33%;
 }
 
 .col-lg-3 {
@@ -355,9 +346,11 @@ h6 {
 .pageContainer {
     min-height: 420px;
 }
+
 .section.topSection {
     padding-top: 100px;
 }
+
 .section {
     padding: 30px 0;
     position: relative;
@@ -453,4 +446,20 @@ h6 {
     padding: 20px 0;
     border-top: 1px rgba(255, 255, 255, 0.2) solid;
     color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 760px) {
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
 }

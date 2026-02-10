@@ -221,6 +221,11 @@
  }
 
 
+ .form {
+     max-width: 800px;
+     margin: auto;
+ }
+
  form .form-submitting {
      display: none;
  }
@@ -293,3 +298,4 @@
      background: var(--primary-color-d);
      color: #fff;
  }
+

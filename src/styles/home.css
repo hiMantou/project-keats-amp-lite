@@ -26,17 +26,10 @@
     overflow: hidden;
 }
 
-.cityList .col-lg-4 {
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
 .sectionAdvantage {}
 
 .circleList {
-    margin: auto;
     text-align: center;
-    position: relative;
 }
 
 .circleList br {
@@ -45,24 +38,10 @@
 
 .circleList .item {
     text-align: center;
-    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.05);
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding: 5px;
-}
-
-.circleList .item.expand {
-    width: 100%;
-}
-
-.circleList .item .inner {
     border-radius: 10px;
-    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.08);
-}
-
-.circleList .item .cont {
     padding: 12px 0;
+    margin-bottom: 12px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.08);
 }
 
 .circleList .item h4 {
@@ -71,19 +50,19 @@
     text-overflow: ellipsis;
 }
 
-.circleList .item.yellow .inner {
+.circleList .item.yellow {
     background: var(--second-color);
 }
 
-.circleList .item.green .inner {
+.circleList .item.green {
     background-color: var(--primary-color);
 }
 
-.circleList .item.greenLight .inner {
+.circleList .item.greenLight {
     background-color: var(--primary-color-l);
 }
 
-.circleList .item.greenDark .inner {
+.circleList .item.greenDark {
     color: #fff;
     background-color: var(--primary-color-d);
 }
@@ -140,34 +119,40 @@
 .faqList .item .minus {
     display: none;
 }
-amp-accordion section[expanded] .plus {
+
+.faqList .item[expanded] .plus {
     display: none;
 }
 
-amp-accordion section:not([expanded]) .minus {
+.faqList .item[expanded] .minus {
     display: inline-block;
 }
 
 .faqList .text {
-    padding: 0 30px 20px 30px;
+    padding: 0 20px 20px 20px;
 }
 
-
-.sectionAccommodation .cover{
-border-radius: 10px;
-margin-bottom: 12px;
-overflow: hidden;
+.faqList .text ul {
+    padding-left: 28px;
 }
+
+.sectionAccommodation .cover {
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sectionAccommodation .cover img {
+    border-radius: 10px;
+}
+
 .infoBoxList {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px;
 }
 
-.infoBoxList .col-lg-6 {
-margin-bottom: 10px;
-padding-right: 5px;
-padding-left: 5px;
+.infoBoxList .col-md-6 {
+    margin-bottom: 10px;
 }
 
 .infoBox {
@@ -224,4 +209,19 @@ padding-left: 5px;
     background-color: #fff;
     text-align: center;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+
+
+@media (max-width: 760px) {
+
+    .sectionAccommodation .cover .col-md-12 {
+        display: none;
+    }
+
+    .sectionAccommodation .cover .col-md-12:nth-child(1) {
+        display: block;
+    }
+
+
 }

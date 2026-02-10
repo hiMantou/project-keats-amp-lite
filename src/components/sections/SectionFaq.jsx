@@ -11,7 +11,13 @@ const Box = (props) => {
                 <div className="icon"><IconPlus className="plus" /><IconMinus className="minus" /></div>
                 <h4>Lorem Ipsum is simply dummy text of the printin？</h4>
             </header>
-            <div className="text">Lorem Ipsum is simply dummy text of the  standard dummy text ever since the 1500s</div>
+            <div className="text">Lorem Ipsum is simply dummy text of the  standard dummy text ever since the 1500s
+                <ul>
+                    <li>dummy text of the  standard dummy orem Ipsum is simpl</li>
+                    <li>standard dummy orem Ipsum is simpl dummy text of the  </li>
+                    <li>dummy text of the  standard dummy orem Ipsum is simpl</li>
+                </ul>
+            </div>
         </section>
     );
 };

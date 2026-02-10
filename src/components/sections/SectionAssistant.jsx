@@ -3,7 +3,7 @@
 import { Icon } from '@/components';
 const Box = ({ type, children }) => {
     return (
-        <div className="col-lg-6">
+        <div className="col-lg-3 col-md-6">
             <div className="box">
                 <div className="icon"><Icon type={type} /></div>
                 <h4>{children}</h4>
